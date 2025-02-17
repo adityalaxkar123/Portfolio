@@ -11,17 +11,25 @@ import Work from "./component/Work";
 export default function Home() {
   
   const [isDarkMode,setIsDarkMode] = useState(false)
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    // Mark the component as mounted to avoid SSR mismatch
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted) return;
     if(localStorage.theme == 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)){
 setIsDarkMode(true)
     }else{
 setIsDarkMode(false)
     }
-  }, [])
+  }, [isMounted])
   
   
   useEffect(()=>{
+    if (!isMounted) return;
     if(isDarkMode){
       document.documentElement.classList.add('dark')
       localStorage.theme = 'dark';
@@ -30,7 +38,7 @@ setIsDarkMode(false)
       document.documentElement.classList.remove('dark')
       localStorage.theme = '';
     }
-  },[isDarkMode])
+  },[isDarkMode,isMounted])
 
   return (
     <>
