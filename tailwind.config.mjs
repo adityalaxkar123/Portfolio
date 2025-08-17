@@ -1,7 +1,7 @@
-const { Outfit } = require('next/font/google');
+import { Outfit } from 'next/font/google';
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",

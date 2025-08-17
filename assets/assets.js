@@ -35,6 +35,14 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import edunet from './edunet.jpg';
+import gssoc from './gssoc.jpg';
+import hacksagom from './hacksagom.jpg';
+import codathon from './codathon.jpg';
+import doctor from './doctor-appointment.jpg'
+import nextgenbharat from './next-gen-bharat.jpg'
+import garbageai from './garbage-ai.jpg'
+
 
 export const assets = {
     user_image,
@@ -73,42 +81,43 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    edunet,
+    gssoc,
+    hacksagom,
+    codathon
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+      title: 'Doctor Appointment Booking System',
+      description: 'A full-stack healthcare platform enhanced with AI. Features AI-powered skin disease detection, smart symptom-based doctor recommendations, and seamless patient-doctor video consultations—redefining digital healthcare.',
+      bgImage: doctor,
+      github: 'https://github.com/adityalaxkar123/public_doctor_appointment_booking-website-',
+      preview: 'https://vaidyatek-frontend.onrender.com/',
+      techStack: ['MongoDB', 'Express.js', 'Node.js', 'React', 'Tailwind CSS', 'HTML', 'Python', 'OpenCV', 'TensorFlow', 'EfficientNetV2B2']
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+      title: 'Garbage Classification AI Model',
+      description: 'An intelligent deep learning model that classifies 6+ types of garbage and identifies recyclability, helping drive smart waste management solutions.',
+      bgImage: garbageai,
+      github: 'https://github.com/adityalaxkar123/aicte-internship',
+      preview: null,
+      techStack: ['Python', 'OpenCV', 'TensorFlow', 'EfficientNetV2B2', 'Matplotlib', 'NumPy', 'Scikit-learn']
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
-    },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
-    },
-]
-
-export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
-
+      title: 'Next-Gen Bharat',
+      description: 'A modern podcast and community platform with 4 distinct user panels: User, Staff, Alumni, and Admin. Alumni can share resources and post blogs, while staff submit progress reports to admins—streamlining collaboration and knowledge sharing.',
+      bgImage: nextgenbharat,
+      github: 'https://github.com/adityalaxkar123/public_next-gen-bharat-podcaste-website-/tree/main',
+      preview: 'https://next-gen-bharat.onrender.com',
+      techStack: ['MongoDB', 'Express.js', 'Node.js', 'React', 'Tailwind CSS', 'CSS', 'HTML', 'TinyMCE', 'Cloudinary']
+    }
+  ]
+  
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, Java, Python' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science (nit manipur)' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 
