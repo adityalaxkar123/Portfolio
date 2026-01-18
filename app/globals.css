@@ -2,7 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  font-family: Outfit;
+@layer base {
+  html {
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    font-family: var(--font-outfit);
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply w-full px-4 sm:px-6 lg:px-[12%] py-12 sm:py-16 scroll-mt-20;
+  }
+
+  .section-divider {
+    @apply border-t border-black/5 dark:border-white/10;
+  }
+
+  .glass {
+    @apply bg-white/70 backdrop-blur border border-black/5 shadow-sm;
+  }
+
+  .glass-dark {
+    @apply dark:bg-white/5 dark:border-white/10;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base font-medium bg-black text-white shadow-[0_10px_25px_rgba(0,0,0,0.18)] hover:opacity-90 transition dark:bg-white dark:text-black;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base font-medium border border-gray-300 text-gray-900 bg-white/70 backdrop-blur hover:bg-white transition dark:border-white/20 dark:bg-white/10 dark:text-white;
+  }
 }
 

@@ -3,8 +3,8 @@ import Image from 'next/image'
 import { assets } from '@/assets/assets'
 const Footer = ({isDarkMode}) => {
   return (
-    <footer className=' bg-gradient-to-r from-gray-900 to-blue-900 dark:from-gray-800 dark:to-blue-800 text-white'>
-      <div className='px-4 sm:px-6 lg:px-[12%] py-12 sm:py-16'>
+    <footer className='text-white'>
+      <div className='px-4 sm:px-6 lg:px-[12%] py-12 sm:py-16 bg-gradient-to-r from-gray-900 to-blue-900 dark:from-gray-800 dark:to-blue-800'>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 sm:mb-12'>
           {/* Brand Section */}
           <div className='text-center md:text-left'>
@@ -12,7 +12,7 @@ const Footer = ({isDarkMode}) => {
               Aditya Laxkar
             </h3>
             <p className='text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base'>
-              A passionate frontend developer creating beautiful and functional web experiences.
+              A passionate Full Stack Web & Software Developer building modern, reliable digital experiences.
             </p>
             <div className='flex items-center justify-center md:justify-start gap-2 sm:gap-3'>
               <Image src={isDarkMode?assets.mail_icon_dark :assets.mail_icon} alt='Email' className='w-4 sm:w-5'/>

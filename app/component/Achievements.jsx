@@ -28,22 +28,15 @@ const Achievements = ({ isDarkMode }) => {
   ];
 
   return (
-    <section id="achievements" className="py-16 px-4">
+    <section id="achievements" className="section-shell">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2
-            className={`text-4xl font-bold mb-4 ${
-              isDarkMode ? 'text-white' : 'text-gray-800'
-            }`}
-          >
+          <h4 className="mb-2 text-sm sm:text-base md:text-lg font-Ovo text-blue-600 dark:text-blue-400">Milestones</h4>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-Ovo text-gray-800 dark:text-white">
             My Achievements
           </h2>
-          <p
-            className={`text-lg ${
-              isDarkMode ? 'text-gray-300' : 'text-gray-600'
-            }`}
-          >
+          <p className="max-w-2xl mx-auto mt-4 text-gray-600 dark:text-gray-300 font-Ovo text-xs sm:text-sm md:text-base">
             Milestones and accomplishments in my journey
           </p>
         </div>
@@ -77,14 +70,9 @@ const Achievements = ({ isDarkMode }) => {
 
               {/* Modern Text Card */}
               <div
-                className={`mt-4 w-full rounded-lg p-4 shadow-lg border border-white/20 backdrop-blur-md transition-all duration-300 
-                ${
-                  isDarkMode
-                    ? 'bg-white/10 text-gray-200 hover:bg-white/20'
-                    : 'bg-gray-50 text-gray-800 hover:bg-gray-100'
-                }`}
+                className="mt-4 w-full rounded-xl p-4 transition-all duration-300 bg-white/70 backdrop-blur border border-black/5 shadow-sm hover:shadow-md hover:-translate-y-0.5 dark:bg-white/5 dark:border-white/10"
               >
-                <p className="text-sm leading-relaxed">{achievement.description}</p>
+                <p className="text-xs sm:text-sm leading-relaxed text-gray-700 dark:text-gray-200">{achievement.description}</p>
               </div>
             </div>
           ))}

@@ -44,8 +44,7 @@ const Experience = ({ isDarkMode }) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="w-full px-4 sm:px-6 lg:px-[12%] py-8 sm:py-12 md:py-16 scroll-mt-20 
-                 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800"
+      className="section-shell"
     >
       {/* Header */}
       <motion.div

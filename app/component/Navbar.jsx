@@ -24,17 +24,17 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
     return (
 
     <>
-    <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden'>
+    <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden opacity-90'>
         <Image src={assets.header_bg_color} alt='' className='w-full'/>
     </div>
         <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4
-         flex items-center justify-between z-50
-          ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20 ": "" }`}>
+         flex items-center justify-between z-50 transition-all
+          ${isScroll ? "bg-white/70 backdrop-blur-lg shadow-sm border-b border-black/5 dark:bg-white/5 dark:border-white/10": "" }`}>
             <a href="#top">
                     <h3 className='w-28 cursor-pointer mr-14'>Aditya &copy;</h3>
             </a>
-            <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3
-            ${isScroll ? "":"bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"} `}>
+            <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-10 py-2.5
+            ${isScroll ? "":"bg-white/70 backdrop-blur shadow-sm border border-black/5 dark:bg-white/5 dark:border-white/10"} `}>
                 <li><a className='font-Ovo' href="#top">Home</a></li>
                 <li><a className='font-Ovo' href="#about">About me</a></li>
                 <li><a className='font-Ovo' href="#experience">Experience</a></li>
@@ -48,8 +48,8 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
                     <Image src={isDarkMode ?assets.sun_icon : assets.moon_icon} alt='' className='w-6'/>
                 </button>
                 <a href="#contact" className='h-12 font-Ovo hidden lg:flex items-center
-                 gap-3 px-10 border border-gray-500 rounded-full ml-4
-                 dark:border-white/50  '>
+                 gap-3 px-10 rounded-full ml-4 border border-black/10 bg-white/60 backdrop-blur
+                 hover:bg-white transition dark:bg-white/5 dark:border-white/15 '>
                 Contact <Image src={isDarkMode ?assets.arrow_icon_dark: assets.arrow_icon} alt='contact image' className='w-3'/></a>
                 <button className='block md:hidden ml-3'>
                 <Image src={isDarkMode ?assets.menu_white : assets.menu_black} alt='' className='w-6' onClick={openMenu}/>

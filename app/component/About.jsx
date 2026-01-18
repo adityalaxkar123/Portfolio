@@ -10,7 +10,7 @@ const About = ({isDarkMode}) => {
     initial={{opacity:0}}
     whileInView={{opacity:1}}
     transition={{duration:1}}
-    className="w-full px-4 sm:px-6 lg:px-[12%] py-8 sm:py-10 scroll-mt-20">
+    className="section-shell">
       <motion.h4
       initial={{opacity:0,y:-20}}
     whileInView={{opacity:1,y:0}}
@@ -33,8 +33,10 @@ const About = ({isDarkMode}) => {
     transition={{duration:0.6}}
          className="w-full max-w-xs sm:w-80 rounded-3xl">
           <Image
-            src={assets.user_image}
-            alt="user"
+            src="/default-avatar.svg"
+            alt="Default avatar"
+            width={320}
+            height={320}
             className="w-full rounded-3xl"
           />
         </motion.div>
@@ -44,10 +46,9 @@ const About = ({isDarkMode}) => {
     transition={{duration:0.6,delay:0.8}}
          className="flex-1">
           <p className="mb-10 max-w-2xl font-Ovo text-gray-600 dark:text-gray-300 leading-relaxed">
-            I am a passionate and experienced Frontend Developer with expertise in modern web technologies. 
-            Throughout my career, I have had the privilege of collaborating with prestigious organizations, 
-            contributing to their success and growth. I specialize in creating intuitive, responsive, and 
-            performant user interfaces that deliver exceptional user experiences.
+            I am a passionate Full Stack Web & Software Developer with expertise in modern web technologies.
+            I enjoy building end-to-end products—from clean, responsive UIs to robust backend logic and integrations.
+            I focus on creating fast, reliable, and user-friendly applications that deliver great experiences.
           </p>
           <motion.ul
           initial={{opacity:0}}
@@ -58,11 +59,9 @@ const About = ({isDarkMode}) => {
               <motion.li
     whileHover={{scale:1.05}}
                 key={index}
-                className="border-[0.5px] hover:bg-lightHover 
-                hover:-translate-y-1 duration-500 hover:shadow-black
-                 border-gray-400 rounded-xl p-4 sm:p-6 cursor-pointer
-                 dark:border-white dark:hover:shadow-white
-                 dark:hover:bg-darkHover/50"
+                className="rounded-2xl p-4 sm:p-6 cursor-pointer transition-all duration-300
+                 bg-white/70 backdrop-blur border border-black/5 shadow-sm hover:shadow-md hover:-translate-y-0.5
+                 dark:bg-white/5 dark:border-white/10"
               >
                 <Image src={isDarkMode ? iconDark :icon} alt={title} className="w-6 sm:w-7 mt-3" />
                 <h3 className="my-3 sm:my-4 font-semibold text-sm sm:text-base
@@ -152,9 +151,9 @@ const About = ({isDarkMode}) => {
                 transition={{ duration: 0.5 }}
                 className="space-y-6"
               >
-                {/* Frontend Development */}
+                {/* Client-Side Development */}
                 <div>
-                  <h6 className="text-md font-semibold text-gray-600 dark:text-gray-400 mb-3">Frontend Development</h6>
+                  <h6 className="text-md font-semibold text-gray-600 dark:text-gray-400 mb-3">Client-Side Development</h6>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {[
                       { skill: "HTML", level: 95 },

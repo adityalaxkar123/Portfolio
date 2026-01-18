@@ -47,16 +47,28 @@ export default function Home() {
   }
 
   return (
-    <>
-  <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-  <Header isDarkMode={isDarkMode}/>
-  <About isDarkMode={isDarkMode}/>
-  <Experience isDarkMode={isDarkMode}/>
-  {/* <Services isDarkMode={isDarkMode}/> */}
-  <Work isDarkMode={isDarkMode}/>
-  <Achievements isDarkMode={isDarkMode}/>
-  <Contact isDarkMode={isDarkMode}/>
-  <Footer isDarkMode={isDarkMode}/>
-    </>
+    <main id="top" className="relative">
+      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+
+      <Header isDarkMode={isDarkMode}/>
+      <div className="section-divider" />
+
+      <About isDarkMode={isDarkMode}/>
+      <div className="section-divider" />
+
+      <Experience isDarkMode={isDarkMode}/>
+      <div className="section-divider" />
+
+      {/* <Services isDarkMode={isDarkMode}/> */}
+
+      <Work isDarkMode={isDarkMode}/>
+      <div className="section-divider" />
+
+      <Achievements isDarkMode={isDarkMode}/>
+      <div className="section-divider" />
+
+      <Contact isDarkMode={isDarkMode}/>
+      <Footer isDarkMode={isDarkMode}/>
+    </main>
   );
 }

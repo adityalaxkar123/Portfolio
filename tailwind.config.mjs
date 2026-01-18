@@ -1,5 +1,3 @@
-import { Outfit } from 'next/font/google';
-
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -15,8 +13,8 @@ export default {
         darkTheme:'#11001F',
       },
       fontFamily:{
-        Outfit:["Outfit","sans-serif"],
-        Ovo:["Ovo","serif"],
+        Outfit:["var(--font-outfit)","Outfit","sans-serif"],
+        Ovo:["var(--font-ovo)","Ovo","serif"],
       },
       boxShadow:{
         'black':'4px 4px 0 #000',
@@ -27,6 +25,6 @@ export default {
       }
     },
   },
-  darkMode:'selector',
+  darkMode:'class',
   plugins: [],
 };

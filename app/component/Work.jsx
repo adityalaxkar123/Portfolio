@@ -17,8 +17,7 @@ const Work = ({ isDarkMode }) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id='work'
-      className="w-full px-3 sm:px-6 lg:px-[10%] py-8 sm:py-12 scroll-mt-20 
-                 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-gray-800"
+      className="section-shell"
     >
       {/* Section Header */}
       <motion.div
@@ -35,7 +34,7 @@ const Work = ({ isDarkMode }) => {
         </h2>
         <p className='text-center max-w-2xl mx-auto mt-3 mb-4 sm:mb-6 font-Ovo 
                       text-gray-600 dark:text-gray-300 text-xs sm:text-sm md:text-base px-2'>
-          Explore my projects showcasing front-end development, UI/UX design, and modern web technologies.
+          Explore projects showcasing full-stack development, UI/UX, and modern web technologies.
         </p>
       </motion.div>
 
@@ -46,8 +45,9 @@ const Work = ({ isDarkMode }) => {
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
             key={index}
-            className='rounded-xl shadow-md bg-white dark:bg-gray-800 overflow-hidden 
-                       hover:shadow-xl transition-all duration-500 flex flex-col'
+            className='rounded-2xl bg-white/80 backdrop-blur border border-black/5 shadow-sm overflow-hidden 
+                       hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col
+                       dark:bg-white/5 dark:border-white/10'
           >
             {/* Clickable Image */}
             <a href={project.github} target="_blank" rel="noopener noreferrer">
@@ -115,8 +115,8 @@ const Work = ({ isDarkMode }) => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-3 py-1.5 bg-gray-200 dark:bg-gray-700 text-xs sm:text-sm 
-                             rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600"
+                  className="px-3 py-1.5 bg-black/5 text-xs sm:text-sm rounded-lg hover:bg-black/10 transition
+                             dark:bg-white/10 dark:hover:bg-white/15"
                 >
                   GitHub
                 </a>
@@ -126,8 +126,8 @@ const Work = ({ isDarkMode }) => {
                     href={project.preview}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-3 py-1.5 bg-blue-600 text-white text-xs sm:text-sm 
-                               rounded-lg hover:bg-blue-700"
+                    className="px-3 py-1.5 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs sm:text-sm 
+                               rounded-lg hover:opacity-90 transition"
                   >
                     Preview
                   </a>
