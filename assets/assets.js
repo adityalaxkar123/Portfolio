@@ -90,27 +90,27 @@ export const assets = {
 
 export const workData = [
     {
-      title: 'Doctor Appointment Booking System',
-      description: 'A full-stack healthcare platform enhanced with AI. Features AI-powered skin disease detection, smart symptom-based doctor recommendations, and seamless patient-doctor video consultations—redefining digital healthcare.',
+      title: 'Doctor Appointment Management System (MERN + AI) | 2024–Present',
+      description: 'Built a full-scale healthcare platform with separate User, Doctor, and Admin panels. Implemented AI skin disease detection and symptom-based disease & medication suggestions. Enabled 1:1 video consultations (WebRTC) and AI-based prescription generation. Integrated Razorpay payment gateway for appointments, lab tests, and medicine orders.',
       bgImage: doctor,
       github: 'https://github.com/adityalaxkar123/public_doctor_appointment_booking-website-',
       preview: 'https://vaidyatek-frontend.onrender.com/',
       techStack: ['MongoDB', 'Express.js', 'Node.js', 'React', 'Tailwind CSS', 'HTML', 'Python', 'OpenCV', 'TensorFlow', 'EfficientNetV2B2']
     },
     {
-      title: 'Garbage Classification AI Model',
-      description: 'An intelligent deep learning model that classifies 6+ types of garbage and identifies recyclability, helping drive smart waste management solutions.',
+      title: 'AI Garbage Classification Model | 2025',
+      description: 'Developed a CNN-based waste classification model achieving 94% validation accuracy. Applied data augmentation and preprocessing to improve model generalization.',
       bgImage: garbageai,
       github: 'https://github.com/adityalaxkar123/aicte-internship',
       preview: null,
       techStack: ['Python', 'OpenCV', 'TensorFlow', 'EfficientNetV2B2', 'Matplotlib', 'NumPy', 'Scikit-learn']
     },
     {
-      title: 'Next-Gen Bharat',
-      description: 'A modern podcast and community platform with 4 distinct user panels: User, Staff, Alumni, and Admin. Alumni can share resources and post blogs, while staff submit progress reports to admins—streamlining collaboration and knowledge sharing.',
+      title: 'Next-Gen Bharat Podcast Platform (Production) | 2025',
+      description: 'Built a real-world, live platform with 1K+ active users. Designed Admin, Staff, and Alumni panels with role-based access. Implemented TinyMCE-based post creation with AI content suggestion.',
       bgImage: nextgenbharat,
       github: 'https://github.com/adityalaxkar123/public_next-gen-bharat-podcaste-website-/tree/main',
-      preview: 'https://next-gen-bharat.onrender.com',
+      preview: 'https://next-gen-bharat-fx47.vercel.app',
       techStack: ['MongoDB', 'Express.js', 'Node.js', 'React', 'Tailwind CSS', 'CSS', 'HTML', 'TinyMCE', 'Cloudinary']
     }
   ]

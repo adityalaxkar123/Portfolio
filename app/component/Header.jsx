@@ -5,10 +5,6 @@ import { motion } from "motion/react"
 const Header = () => {
   return (
     <section className="relative w-11/12 max-w-3xl text-center mx-auto min-h-screen flex flex-col items-center justify-center gap-4 sm:gap-5 px-4">
-      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute left-1/2 top-24 h-72 w-72 -translate-x-1/2 rounded-full bg-gradient-to-tr from-indigo-500/25 via-fuchsia-500/20 to-sky-500/20 blur-3xl" />
-        <div className="absolute right-[-60px] bottom-24 h-64 w-64 rounded-full bg-gradient-to-tr from-emerald-500/15 via-cyan-500/15 to-violet-500/15 blur-3xl" />
-      </div>
       <motion.div
       initial={{scale: 0}}
       whileInView={{scale:1}}
@@ -53,7 +49,7 @@ const Header = () => {
           href="#contact"
           className="btn-primary"
         >
-          contact me <Image src={assets.right_arrow_white} alt="" className="w-3 sm:w-4" />
+          contact me <Image src={assets.right_arrow_white} alt="" className="w-3 sm:w-4 dark:invert" />
         </motion.a>
         <motion.a
         initial={{y:30,opacity:0}}
@@ -63,7 +59,7 @@ const Header = () => {
           download="Aditya_Laxkar_Resume"
           className="btn-secondary"
         >
-          my resume <Image src={assets.download_icon} alt="" className="w-3 sm:w-4" />
+          my resume <Image src={assets.download_icon} alt="" className="w-3 sm:w-4 dark:invert" />
         </motion.a>
       </div>
     </section>
