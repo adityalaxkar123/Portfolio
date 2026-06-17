@@ -94,7 +94,8 @@ export const workData = [
       description: 'Built a full-scale healthcare platform with separate User, Doctor, and Admin panels. Implemented AI skin disease detection and symptom-based disease & medication suggestions. Enabled 1:1 video consultations (WebRTC) and AI-based prescription generation. Integrated Razorpay payment gateway for appointments, lab tests, and medicine orders.',
       bgImage: doctor,
       github: 'https://github.com/adityalaxkar123/public_doctor_appointment_booking-website-',
-      preview: 'https://vaidyatek-frontend.onrender.com/',
+      preview: 'https://vaidyatek.shop',
+      adminPreview: 'https://admin.vaidyatek.shop',
       techStack: ['MongoDB', 'Express.js', 'Node.js', 'React', 'Tailwind CSS', 'HTML', 'Python', 'OpenCV', 'TensorFlow', 'EfficientNetV2B2']
     },
     {

@@ -9,6 +9,7 @@ const EXPERIENCE = [
     position: "Full Stack Developer Intern",
     location: "Imphal",
     timeframe: "Jan–Feb 2026",
+    reportLink: '/khatakhat_internship_report.png',
     description:
       "Built and shipped end-to-end features for a logistics platform across dashboards and APIs.",
     technologies: [
@@ -293,6 +294,20 @@ const Experience = ({ isDarkMode: _isDarkMode }) => {
                           </span>
                         ))}
                       </div>
+                      
+                      {exp.reportLink && (
+                        <div className="mt-6">
+                          <a
+                            href={exp.reportLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
+                          >
+                            View Internship Report
+                            <span aria-hidden="true">↗</span>
+                          </a>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

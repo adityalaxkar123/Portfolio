@@ -101,6 +101,18 @@ const Work = ({ isDarkMode: _isDarkMode }) => {
                     </a>
                   )}
 
+                  {project.adminPreview && (
+                    <a
+                      href={project.adminPreview}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-4 py-2 bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-xs sm:text-sm font-medium
+                                 rounded-lg hover:opacity-90 transition"
+                    >
+                      Admin Demo <span aria-hidden="true">↗</span>
+                    </a>
+                  )}
+
                   {project.bgImage?.src && (
                     <a
                       href={project.bgImage.src}

@@ -7,6 +7,13 @@ import { SiLeetcode, SiCodechef } from 'react-icons/si';
 const Achievements = ({ isDarkMode: _isDarkMode }) => {
   const competitionAchievements = [
     {
+      src: '/khatakhat_internship_certificate.jpeg',
+      alt: 'Khatakhat Internship Certificate',
+      title: 'Internship Certificate',
+      description: 'Completed Full Stack Developer Internship at Khatakhat Logistics Pvt. Ltd.',
+      badge: '🎓',
+    },
+    {
       src: assets.codathon,
       alt: 'Codathon Achievement',
       title: '1st Prize — Codathon',
@@ -42,8 +49,8 @@ const Achievements = ({ isDarkMode: _isDarkMode }) => {
       Icon: SiLeetcode,
       color: 'text-yellow-500',
       stats: [
-        { label: 'Problems Solved', value: '300+' },
-        { label: 'Contest Rating', value: '1600+' },
+        { label: 'Problems Solved', value: '400+' },
+        { label: 'Contest Rating', value: '1700+' },
       ],
     },
     {
@@ -148,7 +155,7 @@ const Achievements = ({ isDarkMode: _isDarkMode }) => {
                   {achievement.description}
                 </p>
                 <a
-                  href={achievement.src?.src}
+                  href={achievement.src?.src || achievement.src}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-auto inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
